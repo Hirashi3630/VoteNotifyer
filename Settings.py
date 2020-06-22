@@ -6,8 +6,8 @@ import requests
 
 
 class Settings:
-    def __init__(self, file_path):
-        self.file_path = file_path
+    def __init__(self):
+        self.file_path = 'config.json'
 
         data = self.Load()
         self.interval = data['interval']
@@ -33,7 +33,7 @@ class Settings:
         return requests.get(default_config_url).content.decode("utf-8")
 
 
-s = Settings('config.json')
+s = Settings()
 print(s.interval)
 print(s.sfx_path)
 

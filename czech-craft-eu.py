@@ -3,12 +3,10 @@ from bs4 import BeautifulSoup
 import re
 from datetime import datetime
 
-URL = 'https://czech-craft.eu/server/skymc/vote/'
-
 
 class PageScrapper:
-    def __init__(self, url):
-        self.url = url
+    def __init__(self):
+        self.url = 'https://czech-craft.eu/server/skymc/vote/'
 
     def CanVote(self):
         page = requests.get(self.url)
@@ -19,7 +17,7 @@ class PageScrapper:
         alerts = soup.findAll("div", {"class": "alert-error"})
 
         if len(alerts) < 1:
-            return True
+            return 1
         else:
             text = alerts[0].text  # if you can vote - return time left
 
@@ -28,9 +26,3 @@ class PageScrapper:
             result = datetime.strptime(only_time, '%H:%M:%S').time()
 
             return result
-
-
-ps = PageScrapper(URL)
-print(ps.CanVote())
-current_time = datetime.now().time()
-print(current_time)

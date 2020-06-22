@@ -9,5 +9,5 @@ class SFX:
         playsound(self.filename)
 
 
-sfx = SFX('sfx/notif01.wav')
-sfx.play()
+#sfx = SFX('sfx/notif01.wav')
+#sfx.play()
