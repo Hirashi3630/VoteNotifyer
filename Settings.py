@@ -16,9 +16,9 @@ class Settings:
     def Load(self):
         if os.path.isfile(self.file_path) and os.access(self.file_path, os.R_OK):
             # checks if file exists
-            print("File exists and is readable")
+            print("Config exists and is readable!")
         else:
-            print("Either file is missing or is not readable, creating file...")
+            print("Either config is missing or is not readable, creating file...")
             with io.open(self.file_path, 'w') as db_file:
                 db_file.write(self.GetDefaultConfig())
 
