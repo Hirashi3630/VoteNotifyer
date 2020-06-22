@@ -19,7 +19,7 @@ class Settings:
             print("File exists and is readable")
         else:
             print("Either file is missing or is not readable, creating file...")
-            with io.open(os.path.join(self.file_path, 'config.json'), 'w') as db_file:
+            with io.open(self.file_path, 'w') as db_file:
                 db_file.write(self.GetDefaultConfig())
 
         with open(self.file_path) as config_file:
