@@ -25,6 +25,9 @@ class CFG:
             h.log("Either config is missing or is not readable, creating file...", 'yellow')
             with io.open(self.file_path, 'w') as db_file:
                 db_file.write(self.GetDefaultConfig())
+            h.log("Edit 'config.json' and execute 'MCNotifyer.py' again.", 'white')
+            input("Press Enter to exit...")
+            exit()
 
         # read file if everything is ok
         with open(self.file_path) as config_file:
