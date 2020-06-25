@@ -5,8 +5,8 @@ from datetime import datetime
 
 
 class PageScrapper:
-    def __init__(self):
-        self.url = 'https://czech-craft.eu/server/skymc/vote/'
+    def __init__(self, server):
+        self.url = 'https://czech-craft.eu/server/' + server + '/vote/'
 
     def CanVote(self):
         page = requests.get(self.url)
