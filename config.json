@@ -1,5 +1,5 @@
 {
-  "repeat-interval": 1,
+  "repeat-interval": 5,
   "scraper-file": "czech-craft-eu",
   "scraper-file-par": "skymc",
   "sound-path": "sfx/notif01.wav"
