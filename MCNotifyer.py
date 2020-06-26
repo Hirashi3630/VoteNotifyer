@@ -28,8 +28,10 @@ def Check():
         h.log('Time left: {0}'.format(h.strfdelta(time_left, "{hours}h {minutes}min {seconds}s")), 'yellow')
         return time_left.total_seconds()
     else:
-        raise Exception(
-            'Something went wrong with loading !')  # IP ban, server is down, don\'t have internet connection...
+        # raise Exception('Something went wrong with loading !')  # IP ban, server is down, don\'t have internet connection...
+        h.log("Something went wrong with loading !", 'red')
+        input("Press Enter to exit...")
+        exit()
 
 
 while 1 != 2:
