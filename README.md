@@ -6,7 +6,14 @@
   </a>
 </p>
 
-> description
+> VoteNotifyer is program to help you remind when you can vote for Minecraft servers such as [minecraftservers.org](https://minecraftservers.org/), [minecraft-mp.com](https://minecraft-mp.com/) and many more...
+>
+> * **Supported servers**:
+>   * [czech-craft.eu](https://czech-craft.eu/)
+
+####Screenshots:
+
+![preview_1](https://user-images.githubusercontent.com/37778278/85880577-862cea00-b7dc-11ea-9f08-18097b5c8f6f.jpg)
 
 ## Install
 
