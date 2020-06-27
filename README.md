@@ -45,21 +45,25 @@ default `config.json` file can be found [here](https://raw.githubusercontent.com
 <details>
 
 * **"repeat-interval"** -  As soon as you can vote, the program will notify you every **X** second
-    * type: `int`
+    * type: `int` _(number)_
     * default: `5` - it will notify you every fifth second
     * disabled: `-1`
 * **"scraper-file"** - Name of scraper script file (without `.py`)
-    * type: `string`
+    * type: `string` _(text)_
     * default: `czech-craft-eu` 
     * disabled: N/A
 * **"scraper-file-par"** - Parameter for scraper file (currently used for server name)
-    * type: `string`
+    * type: `string` _(text)_
     * default: `skymc` 
     * disabled: N/A
 * **"sound-path"** - Path to sound file that will play if you can vote. [freesound.org](https://freesound.org/) is one of many good sites for sound effects. For example [this](https://freesound.org/people/morrisjm/sounds/268756/).
-    * type: `string`
+    * type: `string` _(text)_
     * default: `sfx/notif01.wav` 
     * disabled: `-1`
+* **"open-browser"** - Once you can vote, open a voting site in your default browser
+    * type: `boolean` _(true/false)_
+    * default: `false` 
+    * disabled: `false`
 
 </details>
 

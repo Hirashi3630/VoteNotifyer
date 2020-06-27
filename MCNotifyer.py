@@ -1,5 +1,6 @@
 from datetime import datetime
 import time
+import webbrowser
 
 settings = __import__('CFG')
 cfg = settings.CFG()
@@ -14,9 +15,17 @@ def Check():
     ps = scraper.PageScrapper(cfg.scraper_file_par)
     current_time = datetime.now().time()
     next_vote_time = ps.CanVote()
+    url = ps.url
 
     if next_vote_time == 1:
+        # play sound
         sound.Play(cfg.sound_path)
+
+        # open browser
+        if cfg.open_browser:
+            webbrowser.open(url, new=0, autoraise=True)
+            
+        # print to console
         h.log('You can vote!', 'green')
         return cfg.repeat_interval
     elif next_vote_time:

@@ -2,5 +2,6 @@
   "repeat-interval": 5,
   "scraper-file": "czech-craft-eu",
   "scraper-file-par": "skymc",
-  "sound-path": "sfx/notif01.wav"
+  "sound-path": "sfx/notif01.wav",
+  "open-browser": true
 }

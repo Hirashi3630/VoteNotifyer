@@ -16,6 +16,7 @@ class CFG:
         self.scraper_file = data['scraper-file']
         self.scraper_file_par = data['scraper-file-par']
         self.sound_path = data['sound-path']
+        self.open_browser = data['open-browser']
 
     def Load(self):
         # check if exists - if not create and download default config
