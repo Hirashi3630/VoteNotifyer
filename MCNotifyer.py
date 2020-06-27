@@ -34,7 +34,7 @@ def Check():
         exit()
 
 
-while 1 != 2:
+while True:
     interval = Check()
     h.log('Sleeping for {0} seconds. Press CTRL+C to exit.'.format(int(interval)), 'white')
     time.sleep(interval)
