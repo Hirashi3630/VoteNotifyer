@@ -34,7 +34,8 @@ def Check():
         next_vote = datetime.combine(date, next_vote_time)
         time_left = next_vote - current
 
-        h.log('Time left: {0}'.format(h.strfdelta(time_left, "{hours}h {minutes}min {seconds}s")), 'yellow')
+        h.log('Time left: {0} (at {1})'.format(h.strfdelta(time_left, "{hours}h {minutes}min {seconds}s"),
+                                               next_vote_time), 'yellow')
         return time_left.total_seconds()
     else:
         # raise Exception('Something went wrong with loading !')  # IP ban, server is down, don\'t have internet connection...
