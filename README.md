@@ -26,7 +26,7 @@ To download source code this way [click here](https://github.com/Hirashi3630/Vot
 #### With [git](https://git-scm.com)
 
 ```shell script
-git clone https://github.com/danielkrupinski/Osiris.git
+git clone https://github.com/Hirashi3630/VoteNotifyer.git
 ```
 or with pip
 ```shell script
