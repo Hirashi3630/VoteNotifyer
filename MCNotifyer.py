@@ -46,10 +46,10 @@ def CheckModules():
         if not cfg.data['modules'][module_name]['enabled']:  # check if module is disabled -> break
             break
 
-        Helper.log('Found {0} module!'.format(module_name), 'green')
+        # Helper.log('Found {0} module!'.format(module_name), 'green')
         new_module = importlib.import_module("Modules." + module_name)
         new_module.Start(cfg.data['modules'][module_name])  # call Start() method with config as parameter
-        Helper.log('{0} finished!'.format(module_name), 'green')
+        # Helper.log('{0} finished!'.format(module_name), 'green')
 
 
 while True:
