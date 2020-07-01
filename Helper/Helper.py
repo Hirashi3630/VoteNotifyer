@@ -1,8 +1,5 @@
 from datetime import datetime
-from colorama import init
 from termcolor import colored
-
-init()
 
 
 def strfdelta(tdelta, fmt):  # stringify delta time
