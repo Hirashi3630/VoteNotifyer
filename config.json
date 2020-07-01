@@ -1,7 +1,15 @@
 {
-  "repeat-interval": 5,
+  "repeat-interval": 10,
   "scraper-file": "czech-craft-eu",
   "scraper-file-par": "skymc",
-  "sound-path": "sfx/notif01.wav",
-  "open-browser": true
+  "modules": {
+    "PlaySound": {
+      "enabled": true,
+      "sound-path": "sfx/notif01.wav"
+    },
+    "OpenBrowser": {
+      "enabled": true,
+      "url": "https://czech-craft.eu/server/skymc/vote/"
+    }
+  }
 }
