@@ -5,7 +5,7 @@ from pathlib import Path
 import importlib
 import os
 
-settings = __import__('CFG')
+settings = __import__('config')
 cfg = settings.CFG()
 
 scraper = __import__(cfg.scraper_file)
