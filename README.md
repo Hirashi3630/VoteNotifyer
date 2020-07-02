@@ -57,7 +57,7 @@ default `config.json` file can be found [here](https://raw.githubusercontent.com
     * type: `string` _(text)_
     * default: `skymc` 
     * disabled: N/A
-* **"modules"** - Settings for each module 
+* **"modules"** - Settings for each [module](https://github.com/Hirashi3630/VoteNotifyer#modules)
 
 </details>
 
@@ -65,7 +65,7 @@ default `config.json` file can be found [here](https://raw.githubusercontent.com
 
 Modules are located in `/Modules` folder.
 
-You can [add]()/[remove]()/[edit]() each module without changing code.
+You can [**add**](https://github.com/Hirashi3630/VoteNotifyer#how-to-add-module) / **remove** / **edit** each module without changing code.
 
 #### How to add module
 To add new module create new `.py` file in `/Modules` folder. <br/><br/>
