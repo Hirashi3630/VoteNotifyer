@@ -33,12 +33,13 @@ or with pip
 pip install git+https://github.com/Hirashi3630/VoteNotifyer.git@[master or other branch]
 ```
 
-## Usage
+## Mics
+### Usage:
 
 1. edit `config.json` ([how?](https://github.com/Hirashi3630/VoteNotifyer#config))
-2. run `python MCNotifyer.py`
+2. run `python main.py`
 
-## Config
+### Config:
 
 default `config.json` file can be found [here](https://raw.githubusercontent.com/Hirashi3630/VoteNotifyer/master/config.json)
 
@@ -56,16 +57,59 @@ default `config.json` file can be found [here](https://raw.githubusercontent.com
     * type: `string` _(text)_
     * default: `skymc` 
     * disabled: N/A
-* **"sound-path"** - Path to sound file that will play if you can vote. [freesound.org](https://freesound.org/) is one of many good sites for sound effects. For example [this](https://freesound.org/people/morrisjm/sounds/268756/).
-    * type: `string` _(text)_
-    * default: `sfx/notif01.wav` 
-    * disabled: `-1`
-* **"open-browser"** - Once you can vote, open a voting site in your default browser
-    * type: `boolean` _(true/false)_
-    * default: `false` 
-    * disabled: `false`
+* **"modules"** - Settings for each module 
 
 </details>
+
+### Modules:
+
+Modules are located in `/Modules` folder.
+
+You can [add]()/[remove]()/[edit]() each module without changing code.
+
+#### How to add module
+To add new module create new `.py` file in `/Modules` folder. <br/><br/>
+
+**Example**:
+
+file `*.py`:
+```python
+def Start(cfg):
+    print('Hello World')
+```
+<br/>
+
+modules in `config.json`:
+```json
+{
+    "modules": {
+        "NameOfFile": {
+          "enabled": true,
+          "my-parameter": "value123"
+        }
+    }
+}
+```
+_note: name of module must be same as name of file_
+
+<br/>
+
+**Config usage**:
+
+The `cfg` parameter is used for accessing module settings in `config.json`
+like this:
+
+```python
+def Start(cfg):
+    value = cfg['my-parameter']
+```
+
+
+## Contributing
+
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/Hirashi3630/VoteNotifyer/issues). 
+
+_btw this code is shit_
 
 ## Author
 
@@ -74,11 +118,6 @@ default `config.json` file can be found [here](https://raw.githubusercontent.com
 * Github: [@Hirashi3630](https://github.com/Hirashi3630)
 * Discord: Hirashi#3630
 
-## Contributing
-
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/Hirashi3630/VoteNotifyer/issues). 
-
-_btw this code is shit_
 
 ## License
 
