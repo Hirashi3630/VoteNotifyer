@@ -1,3 +1,7 @@
+<b><p>I don't update this project and it's trash anyways so I decided to archive it.<br>
+This was one of my first Python projects and tbh probably last (I don't like python).</p></b>
+<br>
+
 <h1 align="center">VoteNotifyer</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-0.0.1-blue.svg?cacheSeconds=2592000" />
